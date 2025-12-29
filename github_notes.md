@@ -32,3 +32,31 @@ Changes to be committed:
 
 PS C:\Users\ngima\Documents\GitHub\AI-Ml> 
 ```
+
+## Create commit message
+
+- To add commit message `git commit -m "Initialized"`
+
+<!-- Rest will be done by Ancy salmankhan -->
+
+## Branch
+
+- To create new branch `git branch ancy`
+- To check available branches `git branch`
+
+```bash
+git branch
+  ancy
+* main
+```
+
+- To change branch `git checkout AvailableBranchName`
+
+```bash
+git checkout ancy
+Switched to branch 'ancy'
+PS C:\Users\ngima\Documents\GitHub\AI-Ml> git branch
+* ancy
+  main
+PS C:\Users\ngima\Documents\GitHub\AI-Ml> 
+```
