@@ -1,0 +1,166 @@
+What is NumPy?
+
+NumPy = Numerical Python
+It is used for:
+
+Working with numbers
+
+Handling large data fast
+
+Arrays (better than Python lists)
+
+Used in ML, AI, Data Science
+
+
+import NumPy as np
+Python List vs NumPy Array
+
+python List → slow for math
+
+NumPy array → very fast for math
+
+
+Why do we use Zero Array (np.zeros)?
+📌 Purpose
+
+To create an empty container filled with zeros.
+
+🔹 Why needed?
+
+To initialize memory
+
+To store results later
+
+To avoid random garbage values
+
+✅ Example:
+
+Suppose you want to store marks of 5 students, but you don’t know them yet.
+
+
+import numpy as np
+
+marks = np.zeros(5)
+print(marks)
+
+
+marks[0] = 85
+marks[1] = 90
+
+
+Used in:
+
+Machine learning (weights initialization)
+
+Image processing (black image)
+
+Counters & accumulators
+
+
+Why do we use Ones Array (np.ones)?
+📌 Purpose
+
+To create an array already filled with 1.
+
+🔹 Why needed?
+
+To multiply values
+
+To initialize bias values
+
+To create a base array
+
+✅ Example:
+
+Suppose each product costs ₹100, and you have 5 products.
+
+
+price = np.ones(5) * 100
+print(price)
+
+
+Used in:
+
+ML bias initialization
+
+Scaling values
+
+Creating test data
+
+
+Why do we use Range Array (np.arange)?
+📌 Purpose
+
+To create sequence of numbers automatically.
+
+🔹 Why needed?
+
+Avoid manual typing
+
+Create indexes
+
+Generate time steps
+
+✅ Example:
+
+Create roll numbers from 1 to 10:
+
+
+
+Used in:
+
+Indexing
+
+Loop replacement
+
+Data simulation
+
+
+| Function   | What it Creates | Why it’s Used       |
+| ---------- | --------------- | ------------------- |
+| `zeros()`  | All 0 values    | Empty storage       |
+| `ones()`   | All 1 values    | Base / multiplier   |
+| `arange()` | Sequence        | Automatic numbering |
+
+
+| What          | Code        |
+| ------------- | ----------- |
+| First row     | `arr[0]`    |
+| First element | `arr[0][0]` |
+| 50            | `arr[1][1]` |
+| 90            | `arr[2][2]` |
+
+
+
+NumPy Functions:
+
+sum()
+
+mean()
+
+max(), min()
+
+axis concept
+
+
+NumPy – Lesson 7: Built-in Functions & axis
+1️⃣ Why NumPy Functions?
+
+They help us analyze data quickly without loops.
+
+Understanding axis (Very Important Concept)
+
+What does axis mean?
+
+| axis     | Meaning     |
+| -------- | ----------- |
+| `axis=0` | column-wise |
+| `axis=1` | row-wise    |
+
+Why This Matters
+
+Used in statistics
+
+Used in ML feature calculations
+
+Used in data preprocessing
