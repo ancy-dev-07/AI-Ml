@@ -417,6 +417,73 @@ PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git branch
   main
 PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; 
 </div></code></pre>
+<h2 id="merge">Merge</h2>
+<ul>
+<li>To merge current branch with new branch to main branch</li>
+<li>Go to main branch</li>
+</ul>
+<pre class="hljs"><code><div>(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git checkout main
+Switched to branch <span class="hljs-string">'main'</span>
+Your branch is up to date with <span class="hljs-string">'origin/main'</span>.
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git merge ancy
+Merge made by the <span class="hljs-string">'ort'</span> strategy.
+ first.js                |  7 ++++++
+ first.txt               |  1 +
+ github_notes.md         | 28 ++++++++++++++++++++++++
+ python1/Numpy/basic.py  | 58 ++++++++++++++++++++++++++++++++++++++++++++-----
+ python1/Numpy/notes.txt | 14 +++++++++++-
+ 5 files changed, 101 insertions(+), 7 deletions(-)
+ create mode 100644 first.js
+ create mode 100644 first.txt
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git add .
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git commit -m <span class="hljs-string">""</span>
+error: switch `m<span class="hljs-string">' requires a value
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git commit -m "q"
+On branch main
+Your branch is ahead of '</span>origin/main<span class="hljs-string">' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 425 bytes | 425.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ancy-dev-07/AI-Ml.git
+   f3b99d3..a28f58c  main -&gt; main
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git add .        
+warning: in the working copy of '</span>github_notes.html<span class="hljs-string">', LF will be replaced by CRLF the next time Git touches it
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git commit -m "q"
+[main 224bedd] q
+ 1 file changed, 42 insertions(+), 378 deletions(-)
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git push         
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.54 KiB | 525.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ancy-dev-07/AI-Ml.git
+   a28f58c..224bedd  main -&gt; main
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git add .        
+warning: in the working copy of '</span>github_notes.html<span class="hljs-string">', LF will be replaced by CRLF the next time Git touches it
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git commit -m "q"
+[main e75b88f] q
+ 1 file changed, 383 insertions(+), 23 deletions(-)
+(env) PS C:\Users\ngima\Documents\GitHub\AI-Ml&gt; git push         
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.97 KiB | 1.48 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ancy-dev-07/AI-Ml.git
+   224bedd..e75b88f  main -&gt; main
+</span></div></code></pre>
 
 </body>
 </html>
