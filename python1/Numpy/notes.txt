@@ -164,3 +164,15 @@ Used in statistics
 Used in ML feature calculations
 
 Used in data preprocessing
+
+
+NumPy – Lesson 8: Random Numbers
+1️⃣ Why Random Numbers?
+
+Used for:
+
+ML model testing
+
+Simulating data
+
+Games & simulations

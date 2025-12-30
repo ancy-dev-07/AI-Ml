@@ -143,14 +143,60 @@ arr2 = np.array([
     [4, 5, 6]
 ])
 # Column-wise Sum (axis=0)
-print(np.sum(arr2,axis=0))# [5 7 9]
-# Row-wise Sum (axis=1)
-print(np.sum(arr2, axis=1)) #[ 6 15 ]
+# print(np.sum(arr2,axis=0))# [5 7 9]
+# # Row-wise Sum (axis=1)
+# print(np.sum(arr2, axis=1)) #[ 6 15 ]
 
 arr = np.array([
     [10, 20, 30],
     [40, 50, 60]
 ])
-print(np.sum(arr))
-print(np.sum(arr,axis=0))
-print(np.mean(arr,axis=1))
+# print(np.sum(arr))
+# print(np.sum(arr,axis=0))
+# print(np.mean(arr,axis=1))
+
+
+# random float numbers
+
+# print(np.random.rand())
+
+# randomw 1d array
+
+# print(np.random.rand(5))
+
+# random 2d array
+
+# print(np.random.rand(3,4))
+# random int numbers
+
+# print(np.random.randint(1,10))  #single random int number between 1 and 10
+# print(np.random.randint(1,100,5))  #1d array of 5 random int number between 1 and 100
+# print(np.random.randint(1,50,(3,4)))  #2d array of 3x4 random int number between 1 and 50
+# print(np.random.randint(1,10,size=5))
+# print(np.random.randint(1,10,size=(2,3)))
+
+# setting seed (important for reproducibility)
+
+# np.random.seed(42)
+# print(np.random.rand(3,4))
+
+
+# print(np.random.randint(10,50,(3,3)))
+
+
+# np.random.seed(20)
+# array=np.random.randint(1,101,5)
+# print(np.max(array))
+# print(np.mean(array))
+
+
+np.random.seed(10)
+# array=np.random.randint(1,101,(2,4))
+# print(np.max(array))
+# print(np.max(array,axis=0))
+# print(np.mean(array,axis=1))
+
+array=np.random.randint(10,101,(10,3))
+print(np.max(array,axis=0))
+print(np.mean(array,axis=1))
+print(np.mean(array))
