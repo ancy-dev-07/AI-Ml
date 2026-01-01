@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DSA Notes</title>
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --code-bg: #f3f4f6;
+  --note-bg: #eff6ff;
+  --example-bg: #ecfeff;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 15px;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  border-left: 5px solid var(--accent);
+  padding-left: 14px;
+}
+
+h3 {
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+/* Text */
+p {
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 12px;
+}
+
+th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+/* Code */
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* Callout Boxes */
+.definition, .note, .example {
+  border-radius: 6px;
+  padding: 16px;
+  margin: 18px 0;
+}
+
+.definition {
+  background: #f8fafc;
+  border-left: 4px solid #64748b;
+}
+
+.note {
+  background: var(--note-bg);
+  border-left: 4px solid var(--accent);
+}
+
+.example {
+  background: var(--example-bg);
+  border-left: 4px solid #06b6d4;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 36px 0;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Data Structures and Algorithms (DSA)</h1>
+
+<h2>What is a Data Structure?</h2>
+
+<div class="definition">
+  <strong>Data Structure</strong> is a way of organizing and storing data in a computer so that it can be accessed and used efficiently.
+</div>
+
+<p><strong>Simple meaning:</strong></p>
+<p>👉 Data Structure = How data is stored and arranged</p>
+
+<div class="example">
+  <strong>Examples:</strong>
+  <ul>
+    <li>Storing marks in a list</li>
+    <li>Storing student details using a dictionary</li>
+    <li>Queue system like people standing in a line</li>
+  </ul>
+</div>
+
+<div class="example">
+  <strong>Real-life example:</strong><br>
+  Books in a library are arranged by subject or author so they can be found quickly.
+</div>
+
+<hr>
+
+<h2>Why is it called “Data Structure”?</h2>
+
+<ul>
+  <li><strong>Data</strong> → Information</li>
+  <li><strong>Structure</strong> → Organization or arrangement</li>
+</ul>
+
+<div class="note">
+  It focuses on how data is structured in memory for efficient access and modification.
+</div>
+
+<hr>
+
+<h2>Types of Data Structures</h2>
+
+<h3>1. Primitive Data Structures</h3>
+<ul>
+  <li>int</li>
+  <li>float</li>
+  <li>char</li>
+  <li>boolean</li>
+</ul>
+
+<h3>2. Non-Primitive Data Structures</h3>
+
+<h3>Linear Data Structures</h3>
+<ul>
+  <li>Array</li>
+  <li>List</li>
+  <li>Stack</li>
+  <li>Queue</li>
+</ul>
+
+<h3>Non-Linear Data Structures</h3>
+<ul>
+  <li>Tree</li>
+  <li>Graph</li>
+</ul>
+
+<hr>
+
+<h2>What is an Algorithm?</h2>
+
+<div class="definition">
+  An <strong>Algorithm</strong> is a step-by-step procedure used to solve a problem.
+</div>
+
+<p><strong>Simple meaning:</strong></p>
+<p>👉 Algorithm = How to solve a problem step by step</p>
+
+<div class="example">
+  <strong>Real-life Algorithm (Making Tea):</strong>
+  <ol>
+    <li>Boil water</li>
+    <li>Add tea powder</li>
+    <li>Add sugar</li>
+    <li>Add milk</li>
+    <li>Serve tea</li>
+  </ol>
+</div>
+
+<hr>
+
+<h2>Why is it called Algorithm?</h2>
+
+<div class="note">
+  The term <strong>Algorithm</strong> comes from the name of a mathematician,
+  <strong>Al-Khwarizmi</strong>.
+</div>
+
+<hr>
+
+<h2>Data Structure vs Algorithm</h2>
+
+<table>
+  <tr>
+    <th>Data Structure</th>
+    <th>Algorithm</th>
+  </tr>
+  <tr>
+    <td>Stores data</td>
+    <td>Processes data</td>
+  </tr>
+  <tr>
+    <td>Focuses on organization</td>
+    <td>Focuses on logic</td>
+  </tr>
+  <tr>
+    <td>Example: Array, Stack</td>
+    <td>Example: Searching, Sorting</td>
+  </tr>
+</table>
+
+<hr>
+
+<div class="note">
+  <strong>Conclusion:</strong><br>
+  Data Structures and Algorithms work together to create efficient and optimized programs.
+</div>
+
+</body>
+</html>

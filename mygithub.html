@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Git & GitHub Documentation</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #161b22;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    text-align: center;
+    color: #58a6ff;
+    font-size: 38px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #30363d;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #79c0ff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+h3 {
+    color: #a5d6ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ===== TEXT ===== */
+p {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #f0f6fc;
+}
+
+/* ===== LISTS ===== */
+ul, ol {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* ===== CODE BLOCKS ===== */
+pre {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+
+code {
+    color: #7ee787;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #30363d;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    display: inline-block;
+    background: #238636;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8b949e;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Git & GitHub Documentation</h1>
+
+<section>
+<h2>What is Git?</h2>
+<ul>
+    <li><strong>Git</strong> is a Version Control System</li>
+    <li>Tracks code changes efficiently</li>
+    <li>Helps multiple developers work together</li>
+</ul>
+</section>
+
+<section>
+<h2>What is GitHub?</h2>
+<p>
+<strong>GitHub</strong> is a web-based Git repository hosting service used to store, manage,
+and collaborate on projects.
+</p>
+
+<h3>GitHub Alternatives</h3>
+<ul>
+    <li>Bitbucket</li>
+    <li>GitBucket</li>
+</ul>
+</section>
+
+<section>
+<h2>Creating a New Repository on GitHub</h2>
+<ol>
+    <li>Click <strong>New Repository</strong></li>
+    <li>Enter repository name</li>
+    <li>Click <strong>Create Repository</strong></li>
+    <li>Choose <strong>New File</strong> or <strong>Upload Existing File</strong></li>
+    <li>Write content and click <strong>Commit Changes</strong></li>
+</ol>
+</section>
+
+<section>
+<h2>Installing & Configuring Git</h2>
+
+<p>Check Git installation:</p>
+<pre><code>git</code></pre>
+
+<p>Set username and email:</p>
+<pre><code>
+git config --global user.name "ancy-dev-07"
+git config --global user.email "ancys722@gmail.com"
+</code></pre>
+</section>
+
+<section>
+<h2>Cloning a GitHub Repository in VS Code</h2>
+<ol>
+    <li>Create a folder (Desktop or C Drive)</li>
+    <li>Open the folder in VS Code</li>
+    <li>Open Terminal</li>
+    <li>Copy repository link from GitHub</li>
+</ol>
+
+<pre><code>git clone &lt;repository-link&gt;</code></pre>
+
+<pre><code>cd repository-folder</code></pre>
+</section>
+
+<section>
+<h2>Git Workflow</h2>
+
+<p>Check file status:</p>
+<pre><code>git status</code></pre>
+
+<p>Add file to staging:</p>
+<pre><code>git add test2.txt</code></pre>
+
+<p>Commit changes:</p>
+<pre><code>git commit -m "Added test2.txt"</code></pre>
+
+<p>Push to GitHub:</p>
+<pre><code>git push origin main</code></pre>
+
+<p><strong>Flow:</strong> Insert → Add → Commit → Push</p>
+</section>
+
+<section>
+<h2>File Status Indicators</h2>
+<ul>
+    <li><strong>U</strong> → Untracked file</li>
+    <li><strong>M</strong> → Modified file</li>
+</ul>
+<p>Use the same workflow: <strong>add → commit → push</strong></p>
+</section>
+
+<section>
+<h2>Pulling New Files from GitHub</h2>
+<p>If files are added directly in GitHub:</p>
+<pre><code>git pull</code></pre>
+<p>⚠️ Do <strong>not</strong> clone again.</p>
+</section>
+
+<section>
+<h2>Adding a New Folder to GitHub from VS Code</h2>
+
+<p>Initialize Git:</p>
+<pre><code>git init</code></pre>
+
+<p>Add and commit:</p>
+<pre><code>
+git add .
+git commit -m "Initial commit"
+</code></pre>
+
+<p>Create repository in GitHub and connect:</p>
+<pre><code>git remote add origin &lt;repository-link&gt;</code></pre>
+
+<p>Check branch:</p>
+<pre><code>git branch</code></pre>
+
+<p>Rename branch:</p>
+<pre><code>git branch -M main</code></pre>
+
+<p>Push to GitHub:</p>
+<pre><code>git push origin main</code></pre>
+</section>
+
+<footer>
+📘 Git & GitHub Documentation – Beginner Friendly
+</footer>
+
+</div>
+
+</body>
+</html>
